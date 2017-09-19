@@ -2,7 +2,7 @@
 (desktop-save-mode 0)
 
 ;;I don't want auto-save file
-(setq auto-save-default nil)
+;;(setq auto-save-default nil)
 
 ;;Turn off startup message
 (setq inhibit-startup-message t)
@@ -11,9 +11,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;;Display line number at left margin
-;;(global-linum-mode t)
-(setq column-number-mode 1)
-(setq line-number-mode 1)
+(global-linum-mode t)
 
 ;;Add backup directory
 ;;(setq make-backup-files nil)
@@ -26,7 +24,6 @@
 ;;Delete  tool/menu/scroll bar
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(scroll-bar-mode 0)
 
 ;;Enable mouse support
 (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
