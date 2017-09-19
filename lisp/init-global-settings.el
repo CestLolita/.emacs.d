@@ -25,6 +25,18 @@
 ;;Xterm mouse
 (xterm-mouse-mode t)
 
+;;Hide ^M for c/c++ and python files
+(defun remove-dos-eol ()
+  "Do not show ^M in files containing mixed UNIX and DOS line endings."
+  (interactive)
+  (setq buffer-display-table (make-display-table))
+  (aset buffer-display-table ?\^M []))
+(add-hook 'c-mode-hook 'remove-dos-eol)
+(add-hook 'c++-mode-hook 'remove-dos-eol)
+(add-hook 'java-mode-hook 'remove-dos-eol)
+(add-hook 'asm-mode-hook 'remove-dos-eol)
+(add-hook 'python-mode-hook 'remove-dos-eol)
+
 ;;Global key settings
 (global-set-key (kbd "C-z") 'undo)
 
