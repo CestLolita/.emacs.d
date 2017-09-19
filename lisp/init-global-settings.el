@@ -1,9 +1,6 @@
 ;;I don't want to save desktop
 (desktop-save-mode 0)
 
-;;I don't want auto-save file
-;;(setq auto-save-default nil)
-
 ;;Turn off startup message
 (setq inhibit-startup-message t)
 
@@ -14,16 +11,13 @@
 (global-linum-mode t)
 
 ;;Add backup directory
+;;(setq auto-save-default nil)
 ;;(setq make-backup-files nil)
 (setq make-backup-files t)
 (setq kept-old-versions 2)
 (setq kept-new-versions 2)
 (setq delete-old-versions t)
 (setq backup-directory-alist '(("" . "~/.emacsbackup")))
-
-;;Delete  tool/menu/scroll bar
-(tool-bar-mode 0)
-(menu-bar-mode 0)
 
 ;;Enable mouse support
 (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
