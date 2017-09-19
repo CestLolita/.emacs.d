@@ -23,7 +23,7 @@
   counsel
   projectile
   counsel-projectile
-  counsel-gtags))
+  ggtags))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -44,7 +44,7 @@
 ;;Application
 (require 'init-ivy)
 (require 'init-counsel-projectile)
-(require 'init-counsel-gtags)
+(require 'init-ggtags)
 
 ;;--------->Custom-file<--------- 
 (setq custom-file (format "%s%s" emacs-home "custom.el"))
