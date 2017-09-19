@@ -40,6 +40,7 @@
 ;;Site-lisp
 (require 'init-google-c-style)
 (require 'init-yang-mode)
+(require 'init-imenu-list)
 ;;Application
 (require 'init-ivy)
 (require 'init-counsel-projectile)
