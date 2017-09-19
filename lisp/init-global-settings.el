@@ -4,14 +4,29 @@
 ;;I don't want auto-save file
 (setq auto-save-default nil)
 
-;;I don't want backup file
-(setq make-backup-files nil)
-
 ;;Turn off startup message
 (setq inhibit-startup-message t)
 
+;;Replace yes/no with y/n
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;;Display line number at left margin
-(global-linum-mode t)
+;;(global-linum-mode t)
+(setq column-number-mode 1)
+(setq line-number-mode 1)
+
+;;Add backup directory
+;;(setq make-backup-files nil)
+(setq make-backup-files t)
+(setq kept-old-versions 2)
+(setq kept-new-versions 2)
+(setq delete-old-versions t)
+(setq backup-directory-alist '(("" . "~/.emacsbackup")))
+
+;;Delete  tool/menu/scroll bar
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
 
 ;;Enable mouse support
 (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
