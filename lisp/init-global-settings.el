@@ -43,6 +43,9 @@
 (add-hook 'asm-mode-hook 'remove-dos-eol)
 (add-hook 'python-mode-hook 'remove-dos-eol)
 
+;;Show matching parens
+(show-paren-mode 1)
+
 ;;Add highligt symbol
 (require 'highlight-symbol)
 (global-set-key (kbd "S-<f8>") 'highlight-symbol-at-point)
