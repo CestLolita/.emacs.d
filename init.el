@@ -23,7 +23,8 @@
   counsel
   projectile
   counsel-projectile
-  ggtags))
+  ggtags
+  highlight-symbol))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
