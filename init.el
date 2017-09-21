@@ -24,7 +24,8 @@
   projectile
   counsel-projectile
   ggtags
-  highlight-symbol))
+  highlight-symbol
+  company))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -46,6 +47,7 @@
 (require 'init-ivy)
 (require 'init-counsel-projectile)
 (require 'init-ggtags)
+(require 'init-company)
 
 ;;--------->Custom-file<--------- 
 (setq custom-file (format "%s%s" emacs-home "custom.el"))
