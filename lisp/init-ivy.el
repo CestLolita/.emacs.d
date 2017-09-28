@@ -4,6 +4,7 @@
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 (setq ivy-count-format "(%d/%d) ")
+(setq ivy-height 15)
 
 ;;Ivy-based interface to standard commands
 (global-set-key (kbd "C-s") 'swiper)
