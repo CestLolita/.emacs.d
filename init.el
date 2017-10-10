@@ -3,6 +3,7 @@
   (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
 (setq emacs-home "~/.emacs.d/")
+(defconst *is-a-mac* (eq system-type 'darwin))
 
 ;;--------->Package managment<---------
 ;;List the repositories containing them
