@@ -6,10 +6,14 @@
 
 ;;--------->Package managment<---------
 ;;List the repositories containing them
-(setq package-archives '(
-  ("melpa" . "https://melpa.org/packages/")
-  ("gnu" . "https://elpa.gnu.org/packages/")
-  ("marmalade" . "https://marmalade-repo.org/packages/")))
+(setq package-archives
+  '(("GNU ELPA"     . "http://elpa.gnu.org/packages/")
+    ("MELPA Stable" . "https://stable.melpa.org/packages/")
+    ("MELPA"        . "https://melpa.org/packages/"))
+ package-archive-priorities
+  '(("MELPA Stable" . 10)
+    ("GNU ELPA"     . 5)
+    ("MELPA"        . 0)))
 
 (package-initialize)
 
