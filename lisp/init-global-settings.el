@@ -66,6 +66,7 @@
 
 ;;Global key settings
 (global-set-key (kbd "C-z") 'undo)
-
+(global-unset-key (kbd "C-SPC"))
+(global-set-key (kbd "M-SPC") 'set-mark-command)
 
 (provide 'init-global-settings)
