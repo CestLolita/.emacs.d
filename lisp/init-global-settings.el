@@ -68,5 +68,9 @@
 (global-set-key (kbd "C-z") 'undo)
 (global-unset-key (kbd "C-SPC"))
 (global-set-key (kbd "M-SPC") 'set-mark-command)
+(global-set-key (kbd "M-,") 'previous-error)
+(global-set-key (kbd "M-.") 'next-error)
+
+
 
 (provide 'init-global-settings)
