@@ -8,7 +8,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;;Display line number at left margin
-(global-linum-mode t)
+;;(global-linum-mode t)
 
 ;;Add backup directory
 ;;(setq auto-save-default nil)
