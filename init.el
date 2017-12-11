@@ -48,7 +48,7 @@
 ;;--------->lisp and site-lisp path<---------
 (add-to-list 'load-path (format "%s%s" emacs-home "site-lisp"))
 (add-to-list 'load-path (format "%s%s" emacs-home "lisp"))
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 
 ;;--------->Package configuration<--------- 
