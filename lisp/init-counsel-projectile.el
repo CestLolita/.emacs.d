@@ -29,12 +29,14 @@
     "*.tgz"
     "*.zip"
     "*.jpg"
-    "*.bmp")
+    "*.bmp"
+    "*.sublime-project"
+    "*.sublime-workspace")
     projectile-globally-ignored-files))
 
 
 ;;Counsel
-(counsel-projectile-on)
+(counsel-projectile-mode)
 
 
 ;;Bind global key

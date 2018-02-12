@@ -71,6 +71,15 @@
 (global-set-key (kbd "M-,") 'previous-error)
 (global-set-key (kbd "M-.") 'next-error)
 
+;;Add for trmp
+(require 'tramp)
+(setq tramp-default-method "ssh")
+(eval-after-load 'tramp '(setenv "SHELL" "/bin/bash"))
+(add-to-list 'tramp-remote-process-environment "SHELL=/bin/bash")
+(setq explicit-shell-file-name "/bin/bash")
+(setq shell-file-name "/bin/bash")
 
+;;Disable all version control
+(setq vc-handled-backends nil)
 
 (provide 'init-global-settings)

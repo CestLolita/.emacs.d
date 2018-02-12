@@ -18,8 +18,8 @@
         ("MELPA"        . "https://melpa.org/packages/"))
       package-archive-priorities
       '(("MELPA Stable" . 10)
-        ("GNU ELPA"     . 5)
-        ("MELPA"        . 0)))
+        ("GNU ELPA"     . 15)
+        ("MELPA"        . 20)))
 
 ;; activate installed packages
 (package-initialize)
